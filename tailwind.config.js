@@ -6,6 +6,21 @@ export default {
   ],
   theme: {
     extend: {},
+      backgroundImage:{
+        imgHomeMobile:"url('public/recursos/home/HomeMobile.jpg')",
+        imgHomeTablet:"url('public/recursos/home/HomeTablet.jpg')",
+        imgHomeDesktop:"url('public/recursos/home/HomeDesktop.jpg')"
+      },
+      animation:{
+        telaMenu:"telaMenu 1s ease-out"
+      },
+      keyframes:{
+        telaMenu:{
+          "0%": {width:"40px"},
+          "100%":{width:"70vw"}
+        }
+      },
+    
   },
   plugins: [],
 }

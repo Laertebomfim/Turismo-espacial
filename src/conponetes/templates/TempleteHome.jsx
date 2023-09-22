@@ -1,25 +1,33 @@
-import { useContext, useEffect } from "react"
-import Contesto from "../../createContext/Conteto"
-import MainHome from "../organisms/mainHome/MainHome"
-import { 
-    HomeDesktop,
-    HomeTablet,
-    HomeMobile,
-  } from "../../Api"
+import Premisa from "../molecules/mainHome/Premisa"
 export default function TempleteHome(){
-    const {
-        setBackgroundDesktop,
-        setBackgroundTablet,
-        setbackgroundMobile,
-    } = useContext(Contesto)
-    useEffect(()=>{
-        setBackgroundDesktop(HomeDesktop)
-        setBackgroundTablet(HomeTablet)
-        setbackgroundMobile(HomeMobile)
-    })
     return(
         <main>
-            <MainHome/>
+            <Premisa></Premisa>
         </main>
     )
 }
+// import Premisa from "../../molecules/mainHome/Premisa"
+// import { Link } from "react-router-dom"
+
+// // import { styled,} from "styled-components"
+// //     const StyleSection = styled.main`
+// //         text-align: center;
+// //         width: 100%; 
+// //         height: auto;
+// //         overflow: auto;
+// //         @media screen and (min-width:990px){
+// //             margin-top:150px ;
+// //         }
+// //     `
+// export default function MainHome(){
+//     return(
+//         <section>
+//             <Premisa/>
+//             <article>
+//                 <Link to={"/destino"}>
+//                     <div>explora</div>
+//                 </Link>
+//             </article>
+//         </section>
+//     )
+// }
