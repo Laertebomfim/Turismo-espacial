@@ -8,11 +8,7 @@
 //     `
 export default function Premisa(){
     return(
-        <article>
-            <p>ENTÃO VOCÊ QUER VIAJAR PARA</p>
-            <h1>SPACE</h1>
-            <p> Vamos encarar; se você quer ir para o espaço, pode muito bem ir genuinamente para o espaço sideral e não pairar no limite dele. Bem, sente-se e relaxe porque vamos dar-lhe uma experiência verdadeiramente fora deste mundo!</p>
-        </article>
+
     )
 }
 // p

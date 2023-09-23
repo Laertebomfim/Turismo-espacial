@@ -5,10 +5,10 @@ import { tv } from "tailwind-variants"
 //=======================================
 //          tailwind-variants
 const StyleNav = tv({
-    base:"pb-3 border-solid",
+    base:"pb-3 border-solid border-white font-BarlowCondensed text-xl",
     variants:{
         border:{
-            true:"border-b-2",
+            true:"border-b-2 ",
             false:"border-none",
         }
     }
@@ -36,7 +36,7 @@ export default function Nav (){
     
     return(
         
-        <div className="flex flex-col gap-12  md:flex-row md:gap-8 md:backdrop-blur-lg md:h-16 md:pl-8 md:z-0 md:min-w-[450px] md:w-1/2 md:max-w-[650px] md:shrink-0">
+        <div className=" flex flex-col gap-12  md:flex-row md:gap-8 md:backdrop-blur-3xl  md:h-16 md:p-4 box-content md:z-0 md:min-w-[470px] md:w-1/2 md:max-w-[650px] md:shrink-0 md:justify-center">
             {infoStete.map((e,i)=>(
                 <button
                     key={e.key} 
@@ -49,4 +49,3 @@ export default function Nav (){
         </div>
     )
 }
-// novega(`/${e.nome}`)

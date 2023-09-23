@@ -20,7 +20,7 @@ export default function TempleteHead(){
     },[])
     return(
         <header>
-            <section className="flex items-center mx-[5%] mt-8 md:mr-0">
+            <section className="flex items-center mx-[5%] mt-4 md:mr-0">
                     <img className="w-8 " 
                     src="public/recursos/Icons/Logo.svg" 
                     alt="logo do site"/>

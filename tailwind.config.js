@@ -20,7 +20,10 @@ export default {
           "100%":{width:"70vw"}
         }
       },
-    
+    fontFamily:{
+      BarlowCondensed:"'Barlow Condensed', sans-serif",
+      Bellefair:"'Bellefair', serif"
+    }
   },
   plugins: [],
 }

@@ -3,7 +3,6 @@ import { tv } from 'tailwind-variants'
 import { Outlet } from 'react-router-dom'
 import Contesto from './createContext/Conteto'
 import TempleteHead from './conponetes/templates/TempleteHead'
-import TempleteHome from './conponetes/templates/TempleteHome'
 // import TempleteDestino from './conponetes/templates/TempleteDestino'
 // import TempleteEquipe from './conponetes/templates/TempleteEquipe'
 // import TempleteTecnologia from './conponetes/templates/TempleteTecnologia'
@@ -31,7 +30,6 @@ export default function App() {
   const [backgroundDesktop,setBackgroundDesktop] = useState("")
   const [backgroundTablet,setBackgroundTablet] = useState("")
   const [backgroundMobile,setbackgroundMobile] = useState("")
-  const [Imagem,setImagem] = useState({})
 
   useEffect(()=>{
     window.addEventListener("resize",()=>{ 
