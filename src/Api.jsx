@@ -38,28 +38,28 @@ import ImgVehiclePequena from "../src/recucos/tecnologia/vehicle-landscape.jpg"
 import ImgVehicleGrande from "../src/recucos/tecnologia/vehicle-portrait.jpg"
 const DestinoPranetas ={
     moon:{
-        img:ImgMoon,
+        img:"../public/recursos/destino/image-moon.png",
         nome:"moon",
         texto:"Veja nosso planeta como você nunca viu antes. Uma viagem relaxante perfeita para ajudar a recuperar a perspectiva e voltar revigorado. Enquanto estiver lá, conheça um pouco da história visitando os locais de pouso da Luna 2 e da Apollo 11.",
         distancia:"384,400 km",
         Tempo:"3 dias",
     },
     mars:{
-        img:ImgMars,
+        img:"../public/recursos/destino/image-mars.png",
         nome:"mars",
         texto:"Não se esqueça de levar suas botas de caminhada. Você precisará deles para enfrentar o Olympus Mons, a montanha planetária mais alta do nosso sistema solar. É duas vezes e meia o tamanho do Everest!",
         distancia:"225 MIL. km",
         Tempo:"9 meses",
     },
     europa:{
-        img:ImgEuropa,
+        img:"../public/recursos/destino/image-europa.png",
         nome:"europa",
         texto:"A menor das quatro luas galileanas que orbitam Júpiter, Europa é o sonho de um amante do inverno. Com uma superfície gelada, é perfeito para patinar no gelo, curling, hóquei ou simplesmente relaxar em sua confortável cabana de inverno.",
         distancia:"628 MIL. km",
         Tempo:"3 anos",
     },
     titan:{
-        img:ImgTitan,
+        img:"../public/recursos/destino/image-titan.png",
         nome:"titan",
         texto:"A única lua conhecida por ter uma atmosfera densa além da Terra, Titã é um lar longe de casa (apenas algumas centenas de graus mais frio!). Como bônus, você obtém vistas impressionantes dos Anéis de Saturno.",
         distancia:"1.6 BIL. km",

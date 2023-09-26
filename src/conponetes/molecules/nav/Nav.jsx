@@ -1,6 +1,7 @@
-import { useState } from "react"
-import {  useNavigate } from "react-router-dom"
+import { useContext,useState } from "react"
+import { useNavigate } from "react-router-dom"
 import { tv } from "tailwind-variants"
+import Context from "../../../createContext/Context"
 
 //=======================================
 //          tailwind-variants
@@ -15,32 +16,40 @@ const StyleNav = tv({
 })
 //=======================================
 
-const infomações =[
-    {key:1,teste:true, nome:"home"},
-    {key:2,teste:false, nome:"Destino"},
-    {key:3,teste:false, nome:"Equipe"},
-    {key:4,teste:false, nome:"Tecnologi"},
-]
+const infomações =[// infomaçoes para exibir o menu na tela 
+    {key:1,teste:"home" === sessionStorage.getItem("localPagina"), nome:"home",url:"home"},
+    {key:2,teste:"destino" === sessionStorage.getItem("localPagina"), nome:"destino",url:"destino/moon"},
+    {key:3,teste:"equipe" === sessionStorage.getItem("localPagina"), nome:"equipe"},
+    {key:4,teste:"tecnologi" === sessionStorage.getItem("localPagina"), nome:"tecnologi"},
+]//uso sessionStorage para não perder informações quando der um f5 na pagina 
 
 export default function Nav (){
+    const novega = useNavigate()//para altera  a url
+
     const [infoStete,setInfoStete] = useState(infomações)
-    const novega = useNavigate()
-
     let MudarState = (keyClicado)=>{
-
         setInfoStete(infoStete.map((e)=>({
             ...e,
             teste: e.key===keyClicado            
-        })))
+        })))// para identifica o clicado e atribuir um estilo
     }
+
+    const {setBackgroundPagina} = useContext(Context)// para muda o background da pagina 
+
+    const localDaPagina = (nome)=>{
+        window.sessionStorage.setItem("localPagina",nome)
+
+        setBackgroundPagina(sessionStorage.getItem("localPagina"))
+    }
+
     
     return(
         
-        <div className=" flex flex-col gap-12  md:flex-row md:gap-8 md:backdrop-blur-3xl  md:h-16 md:p-4 box-content md:z-0 md:min-w-[470px] md:w-1/2 md:max-w-[650px] md:shrink-0 md:justify-center">
+        <div className=" flex flex-col gap-12  md:flex-row md:gap-16 md:backdrop-blur-3xl  md:h-16 md:p-4 box-content md:z-0 md:min-w-[470px] md:w-1/2 md:max-w-[650px] md:shrink-0 md:justify-center">
             {infoStete.map((e,i)=>(
                 <button
                     key={e.key} 
-                    onClick={()=>{MudarState(e.key),novega(`/${e.nome}`) }}>
+                    onClick={()=>{MudarState(e.key),novega(`/${e.url}`),localDaPagina(e.nome) }}>
 
                         <span className={StyleNav({border:[e.teste]})}>{`0${i} ${e.nome}`}</span>
                 </button>

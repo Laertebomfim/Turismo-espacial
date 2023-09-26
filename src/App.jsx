@@ -1,12 +1,11 @@
 import { useEffect, useState } from 'react'
 import { tv } from 'tailwind-variants'
 import { Outlet } from 'react-router-dom'
-import Contesto from './createContext/Conteto'
+import Context from './createContext/Context'
 import TempleteHead from './conponetes/templates/TempleteHead'
 // import TempleteDestino from './conponetes/templates/TempleteDestino'
 // import TempleteEquipe from './conponetes/templates/TempleteEquipe'
 // import TempleteTecnologia from './conponetes/templates/TempleteTecnologia'
-import Home from './conponetes/atoms/links/Home'
 
 //========================================
 //             tailwind-variants
@@ -15,21 +14,28 @@ const background = tv({
   base:"bg-cover bg-no-repeat h-screen overflow-auto",
   variants:{
     Imagem:{
-      Home: "bg-imgHomeMobile sm:bg-imgHomeTablet lg:bg-imgHomeDesktop" 
+      home: "bg-imgHomeMobile sm:bg-imgHomeTablet lg:bg-imgHomeDesktop",
+      destino:"bg-imgDestinoMobile sm:bg-imgDestinoTablet lg:bg-imgDestinoDesktop"
     }
   },
   defaultVariants:{
-    Imagem:Home
+    Imagem:"home"
   }
 })
 
 //=======================================
 
 export default function App() {
+  if(sessionStorage.length===0){
+    window.sessionStorage.setItem("localPagina","home")
+  }// não quebra a pagina quando der um f5
+
   const [valorResize,setValorResize] = useState(innerWidth)
   const [backgroundDesktop,setBackgroundDesktop] = useState("")
   const [backgroundTablet,setBackgroundTablet] = useState("")
   const [backgroundMobile,setbackgroundMobile] = useState("")
+  const [backgroundPagina,setBackgroundPagina] = useState(window.sessionStorage.getItem("localPagina"))
+  
 
   useEffect(()=>{
     window.addEventListener("resize",()=>{ 
@@ -38,20 +44,21 @@ export default function App() {
   },[valorResize])
 
   return (
-    <Contesto.Provider value={
+    <Context.Provider value={
       {
         valorResize,setValorResize,
         setBackgroundDesktop,backgroundDesktop,
         setBackgroundTablet,backgroundTablet,
-        setbackgroundMobile,backgroundMobile
+        setbackgroundMobile,backgroundMobile,
+        setBackgroundPagina
       }
       }>
-      <div className={background({Imagem:'Home'})}>
+      <div className={background({Imagem:[backgroundPagina]})}> {/*pega o que ta scrito na url*/}
         <TempleteHead/>
         <Outlet/>
       </div>
 
-    </Contesto.Provider>
+    </Context.Provider>
   )
 }
 //cria um tame 

@@ -20,7 +20,8 @@ export default function Celular(){
                 onClick={(e)=>{e.stopPropagation()}}>
 
                     <img className="float-right mt-4 mr-4"   
-                        onClick={()=>fechaMenu()} src="public/recursos/Icons/IconClose.svg"/>
+                        onClick={()=>fechaMenu()} 
+                        src="../public/recursos/Icons/IconClose.svg"/>
 
                     <div className="clear-both h-1/2 pt-16">
                         <Nav/>
@@ -31,7 +32,7 @@ export default function Celular(){
         }else{ // menu fechado 
             elemetoBody.removeEventListener("click",fechaMenu)
             return(
-                <img onClick={()=>{setBoleano(!boleano)}} src="public/recursos/Icons/IconHamburger.svg"/>
+                <img onClick={()=>{setBoleano(!boleano)}} src="../public/recursos/Icons/IconHamburger.svg"/>
             )
         }    
     }

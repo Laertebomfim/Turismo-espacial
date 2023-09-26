@@ -22,11 +22,11 @@ export default function TempleteHead(){
         <header>
             <section className="flex items-center mx-[5%] mt-4 md:mr-0">
                     <img className="w-8 " 
-                    src="public/recursos/Icons/Logo.svg" 
+                    src="../public/recursos/Icons/Logo.svg" 
                     alt="logo do site"/>
 
                     <div className="shrink w-full">
-                         <div className=" hidden md:block md:h-1 md:w-2/5 max-w-[300px] md:bg-slate-800 md:z-10 ml-auto md:relative md:-right-4"></div>{/* poso usar essa div com lg */}
+                         <div className=" hidden md:block md:h-1 md:w-full md:bg-slate-800 md:z-10 ml-auto md:relative md:-right-4"></div>{/* poso usar essa div com lg */}
                     </div>
 
                     {MostraMenuMemo}

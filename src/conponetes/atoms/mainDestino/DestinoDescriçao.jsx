@@ -1,33 +1,11 @@
-import { styled } from "styled-components"
 import PropTypes from "prop-types"
-const Pstyle = styled.p`
-    color:#fff;
-    font-family: "Barlow Condensed";
-    text-transform: uppercase;
-    font-weight: 400;
-    font-size: 20px;
-    margin-top: 30px;
-    margin-bottom: 20px;
-    strong{
-        padding-right:20px;
-        color:#707070;
-        font-size: 20px;
-    }
-    @media screen and (min-Width:768px) and (max-width:990px){
-        margin-left: 30px;
-        text-align: left;
-    }
-    @media screen and (min-width:990px){
-        margin-bottom: 80px;
-        margin-left: 150px;
-        text-align: left;
-    }
 
-
-`
 export default function DestinoDescriçao({Numero,Texto}){
     return(
-        <Pstyle><strong>{Numero}</strong>{Texto}</Pstyle>
+        <p className="font-BarlowCondensed uppercase font-medium text-xl my-8 sm:ml-8 sm:text-left sm:mb-20 lg:ml-32 lg:mb-10">
+            <strong className="pr-4 text-[#707070]">{Numero}</strong>
+            {Texto}
+        </p>
     )
 }
 DestinoDescriçao.propTypes = {
