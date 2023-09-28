@@ -1,4 +1,4 @@
-import { useState } from "react";
+import {  useState } from "react";
 import DestinoDescriçao from "../atoms/mainDestino/DestinoDescriçao";
 import NavPleneta from "../molecules/mainDestino/NavPleneta";
 import {DestinoPranetas} from "../../Api"// onde fica as img dos planetas é as informações deles 
@@ -12,6 +12,8 @@ export default function TempleteDestino(){
     const MudaIformações = (nomeObjeto)=>{
         setUrlImg(DestinoPranetas[nomeObjeto])// muda de objeto de informações 
     }
+
+
     return (
         <main className="text-center lg:Desktop overflow-auto ">
                 <DestinoDescriçao Numero={"01"} Texto={"Escolha seu destino"}/>

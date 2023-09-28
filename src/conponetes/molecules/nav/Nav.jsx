@@ -16,17 +16,19 @@ const StyleNav = tv({
 })
 //=======================================
 
-const infomações =[// infomaçoes para exibir o menu na tela 
-    {key:1,teste:"home" === sessionStorage.getItem("localPagina"), nome:"home",url:"home"},
-    {key:2,teste:"destino" === sessionStorage.getItem("localPagina"), nome:"destino",url:"destino/moon"},
-    {key:3,teste:"equipe" === sessionStorage.getItem("localPagina"), nome:"equipe"},
-    {key:4,teste:"tecnologi" === sessionStorage.getItem("localPagina"), nome:"tecnologi"},
-]//uso sessionStorage para não perder informações quando der um f5 na pagina 
-
 export default function Nav (){
+
+    const infomações =[// infomaçoes para exibir o menu na tela 
+        {key:1,teste:"home" === sessionStorage.getItem("localPagina"), nome:"home",url:"home"},
+        {key:2,teste:"destino" === sessionStorage.getItem("localPagina"), nome:"destino",url:"destino/moon"},
+        {key:3,teste:"equipe" === sessionStorage.getItem("localPagina"), nome:"equipe",url:"equipe/shuttleworth"},
+        {key:4,teste:"tecnologi" === sessionStorage.getItem("localPagina"), nome:"tecnologi"},
+    ]//uso sessionStorage para não perder informações quando der um f5 na pagina 
+
     const novega = useNavigate()//para altera  a url
 
     const [infoStete,setInfoStete] = useState(infomações)
+    
     let MudarState = (keyClicado)=>{
         setInfoStete(infoStete.map((e)=>({
             ...e,
@@ -45,7 +47,7 @@ export default function Nav (){
     
     return(
         
-        <div className=" flex flex-col gap-12  md:flex-row md:gap-16 md:backdrop-blur-3xl  md:h-16 md:p-4 box-content md:z-0 md:min-w-[470px] md:w-1/2 md:max-w-[650px] md:shrink-0 md:justify-center">
+        <div className=" flex flex-col gap-12  md:flex-row md:gap-14 md:backdrop-blur-3xl  md:h-16 md:p-4 box-content md:z-0 md:min-w-[470px] md:w-1/2 md:max-w-[650px] md:shrink-0 md:justify-center">
             {infoStete.map((e,i)=>(
                 <button
                     key={e.key} 

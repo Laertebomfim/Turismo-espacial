@@ -15,7 +15,8 @@ const background = tv({
   variants:{
     Imagem:{
       home: "bg-imgHomeMobile sm:bg-imgHomeTablet lg:bg-imgHomeDesktop",
-      destino:"bg-imgDestinoMobile sm:bg-imgDestinoTablet lg:bg-imgDestinoDesktop"
+      destino:"bg-imgDestinoMobile sm:bg-imgDestinoTablet lg:bg-imgDestinoDesktop",
+      equipe:"bg-imgEquipeMobile sm:bg-imgEquipeTablet lg:bg-imgEquipeDesktop"
     }
   },
   defaultVariants:{
@@ -42,7 +43,7 @@ export default function App() {
         setValorResize(innerWidth)
     })
   },[valorResize])
-
+  console.log(backgroundPagina)
   return (
     <Context.Provider value={
       {
@@ -53,7 +54,7 @@ export default function App() {
         setBackgroundPagina
       }
       }>
-      <div className={background({Imagem:[backgroundPagina]})}> {/*pega o que ta scrito na url*/}
+      <div className={background({Imagem:[backgroundPagina]})}>
         <TempleteHead/>
         <Outlet/>
       </div>
@@ -61,7 +62,5 @@ export default function App() {
     </Context.Provider>
   )
 }
-//cria um tame 
-// passar as imagem para o pubrik
-// usase tailwind variantes 
+// automatiza as funções de atualização de imfomaçao  é navegação 
 

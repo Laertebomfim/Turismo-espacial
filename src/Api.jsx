@@ -68,27 +68,27 @@ const DestinoPranetas ={
 }
 const InfomacoesEquipe ={
     shuttleworth:{
-        img:ImgShuttleworth,
+        img:"../public/recursos/Equipe/shuttleworth.webp",
         nome:"MARK SHUTTLEWORTH",
-        Proficional:"Especialista em missão",
+        Proficão:"Especialista em missão",
         texto:"Mark Richard Shuttleworth é o fundador e CEO da Canonical, a empresa por trás do sistema operacional Ubuntu baseado em Linux. Shuttleworth se tornou o primeiro sul-africano a viajar para o espaço como turista espacial."
     },
       glover:{
-        img:ImgGlover,
+        img:"../public/recursos/Equipe/glover.webp",
         nome:"Victor Glover",
-        Proficional:"PILOTO",
+        Proficão:"PILOTO",
         texto:"Piloto no primeiro voo operacional do SpaceX Crew Dragon para a Estação Espacial Internacional. Glover é um comandante da Marinha dos Estados Unidos, onde pilota um F/A-18. Ele foi membro da tripulação da Expedição 64 e serviu como engenheiro de vôo de sistemas de estação."
     },
     hurley:{
-        img:ImgHurley,
+        img:"../public/recursos/Equipe/hurley.png",
         nome:"Douglas Hurley",
-        Proficional:"Comandante",
+        Proficão:"Comandante",
         texto:"Douglas Gerald Hurley é um engenheiro americano, ex-piloto do Corpo de Fuzileiros Navais e ex-astronauta da NASA. Ele se lançou ao espaço pela terceira vez como comandante do Crew Dragon Demo-2."
     },
     ansair:{
-        img:ImgAnsari,
+        img:"../public/recursos/Equipe/ansari.png",
         nome:"Anousheh Ansari",
-        Proficional:"Engenheiro de voo",
+        Proficão:"Engenheiro de voo",
         texto:"Anousheh Ansari é uma engenheira iraniana-americana e cofundadora da Prodea Systems. Ansari foi a quarta turista espacial autofinanciada, a primeira mulher autofinanciada a voar para a ISS e a primeira iraniana no espaço."
     }
 }

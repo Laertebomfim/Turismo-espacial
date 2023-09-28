@@ -15,6 +15,10 @@ export default {
         imgDestinoMobile:"url('../public/recursos/destino/background-destination-mobile.jpg')",
         imgDestinoTablet:"url('../public/recursos/destino/background-destination-tablet.jpg')",
         imgDestinoDesktop:"url('../public/recursos/destino/background-destination-desktop.jpg')",
+        //equipe 
+        imgEquipeMobile:"url('../public/recursos/Equipe/background-crew-mobile.jpg')",
+        imgEquipeTablet:"url('../public/recursos/Equipe/background-crew-tablet.jpg')",
+        imgEquipeDesktop:"url('../public/recursos/Equipe/background-crew-desktop.jpg')"
 
       },
       animation:{
