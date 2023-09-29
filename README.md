@@ -1,8 +1,21 @@
-# React + Vite
+# Turismo espacial
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
 
-Currently, two official plugins are available:
+## Visão Geral
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+projeto criado para a visualização de informação. A primícia do site e viajem espacial como local para onde ir, para onde é tripulação
+
+## descrição
+Projeto criado para colocar habilidades em prática
+
+## ferramentas
+    react com vite
+    react-router-dom
+    tailwindcss
+    tailwind-variants
+
+## comandos de instalação
+npm install
+
+## Licença
+MIT License
