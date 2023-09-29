@@ -22,7 +22,7 @@ export default function Nav (){
         {key:1,teste:"home" === sessionStorage.getItem("localPagina"), nome:"home",url:"home"},
         {key:2,teste:"destino" === sessionStorage.getItem("localPagina"), nome:"destino",url:"destino/moon"},
         {key:3,teste:"equipe" === sessionStorage.getItem("localPagina"), nome:"equipe",url:"equipe/shuttleworth"},
-        {key:4,teste:"tecnologi" === sessionStorage.getItem("localPagina"), nome:"tecnologi"},
+        {key:4,teste:"tecnologi" === sessionStorage.getItem("localPagina"), nome:"tecnologia",url:"tecnologia/capsul"},
     ]//uso sessionStorage para não perder informações quando der um f5 na pagina 
 
     const novega = useNavigate()//para altera  a url

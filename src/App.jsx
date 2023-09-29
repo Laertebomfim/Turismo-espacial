@@ -16,7 +16,8 @@ const background = tv({
     Imagem:{
       home: "bg-imgHomeMobile sm:bg-imgHomeTablet lg:bg-imgHomeDesktop",
       destino:"bg-imgDestinoMobile sm:bg-imgDestinoTablet lg:bg-imgDestinoDesktop",
-      equipe:"bg-imgEquipeMobile sm:bg-imgEquipeTablet lg:bg-imgEquipeDesktop"
+      equipe:"bg-imgEquipeMobile sm:bg-imgEquipeTablet lg:bg-imgEquipeDesktop",
+      tecnologia:"bg-imgTecnologiaMobile sm:bg-imgTecnologiaTablet lg:bg-imgTecnologiaDesktop"
     }
   },
   defaultVariants:{
@@ -43,7 +44,6 @@ export default function App() {
         setValorResize(innerWidth)
     })
   },[valorResize])
-  console.log(backgroundPagina)
   return (
     <Context.Provider value={
       {

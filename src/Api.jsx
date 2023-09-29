@@ -94,20 +94,20 @@ const InfomacoesEquipe ={
 }
 const TecnologiaInfor={
     capsule:{
-        imgG:ImgCapsuleGrande,
-        imgP:ImgCapsulePequena,
+        imgG:"../public/recursos/tecnologia/capsule-portrait.jpg",
+        imgP:"../public/recursos/tecnologia/capsule-landscape.jpg",
         nome:"CÁPSULA ESPACIAL",
         texto:"Uma cápsula espacial é uma espaçonave frequentemente tripulada que usa uma cápsula de reentrada de corpo rombudo para reentrar na atmosfera da Terra sem asas. Nossa cápsula é onde você passará seu tempo durante o voo. Inclui um ginásio espacial, cinema e muitas outras atividades para o manter entretido.",
     },
     spaceport:{
-        imgG:ImgSpaceportGrande,
-        imgP:ImgSpaceportPequena,
+        imgG:"../public/recursos/tecnologia/spaceport-portrait.jpg",
+        imgP:"../public/recursos/tecnologia/spaceport-landscape.jpg",
         nome:"ESPAÇOPORTO",
         texto:"Um espaçoporto ou cosmódromo é um local para lançamento (ou recebimento) de espaçonaves, por analogia com o porto marítimo para navios ou aeroporto para aeronaves. Com sede no famoso Cabo Canaveral, nosso espaçoporto está idealmente situado para aproveitar a rotação da Terra para o lançamento.",
     },
     vehicle:{
-        imgG:ImgVehicleGrande,
-        imgP:ImgVehiclePequena,
+        imgP:"../public/recursos/tecnologia/vehicle-landscape.jpg",
+        imgG:"../public/recursos/tecnologia/vehicle-portrait.jpg",
         nome:"VEÍCULO DE LANÇAMENTO",
         texto:"Um veículo de lançamento ou foguete transportador é um veículo movido a foguete usado para transportar uma carga útil da superfície da Terra para o espaço, geralmente para a órbita da Terra ou além. Nosso foguete transportador WEB-X é o mais poderoso em operação. Com 150 metros de altura, é uma visão bastante inspiradora no lançamento",
     },

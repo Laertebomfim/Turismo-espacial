@@ -18,7 +18,11 @@ export default {
         //equipe 
         imgEquipeMobile:"url('../public/recursos/Equipe/background-crew-mobile.jpg')",
         imgEquipeTablet:"url('../public/recursos/Equipe/background-crew-tablet.jpg')",
-        imgEquipeDesktop:"url('../public/recursos/Equipe/background-crew-desktop.jpg')"
+        imgEquipeDesktop:"url('../public/recursos/Equipe/background-crew-desktop.jpg')",
+        //tecnologia
+        imgTecnologiaMobile:"url('../public/recursos/tecnologia/background-technology-mobile.jpg')",
+        imgTecnologiaTablet:"url('../public/recursos/tecnologia/background-technology-tablet.jpg')",
+        imgTecnologiaDesktop:"url('../public/recursos/tecnologia/background-technology-desktop.jpg')"
 
       },
       animation:{

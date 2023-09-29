@@ -1,5 +1,5 @@
 import {  useState } from "react";
-import DestinoDescriçao from "../atoms/mainDestino/DestinoDescriçao";
+import DestinoDescriçao from "../atoms/titulo/DestinoDescriçao";
 import NavPleneta from "../molecules/mainDestino/NavPleneta";
 import {DestinoPranetas} from "../../Api"// onde fica as img dos planetas é as informações deles 
 import TempoKm from "../atoms/mainDestino/TempoKm";
@@ -17,7 +17,7 @@ export default function TempleteDestino(){
     return (
         <main className="text-center lg:Desktop overflow-auto ">
                 <DestinoDescriçao Numero={"01"} Texto={"Escolha seu destino"}/>
-            <section className=" lg:flex lg:justify-between items-center">
+            <section className=" lg:flex lg:justify-between items-center ">
                 
                 <article className="lg:w-2/4">
                     <img className="w-2/5 min-w-[190px] max-w-[300px] inline-block animate-planeta lg:w-full" src={urlImg.img} alt="" />

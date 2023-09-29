@@ -1,4 +1,4 @@
-import DestinoDescriçao from "../atoms/mainDestino/DestinoDescriçao";
+import DestinoDescriçao from "../atoms/titulo/DestinoDescriçao";
 import NavEquipe from "../organisms/mainEquipe/NavEquipe";
 import { useState } from "react";
 import { InfomacoesEquipe } from "../../Api"; // local onde estar armazenado as informações da pagina

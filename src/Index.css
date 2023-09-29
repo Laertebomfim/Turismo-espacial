@@ -16,7 +16,5 @@
     .Desktop{
         height: calc(100vh - 112px);
     }
-    .mover{
-        animation: linear 2s infinite ;
-    }
+
 }

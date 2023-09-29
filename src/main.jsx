@@ -7,6 +7,7 @@ import TempleteEquipe from './conponetes/templates/TempleteEquipe'
 import App from './App'
 import './Index.css'
 import { createBrowserRouter,RouterProvider } from 'react-router-dom'
+import TempleteTecnologia from './conponetes/templates/TempleteTecnologia'
 const rotas = createBrowserRouter([
   {
     path:"/",
@@ -27,6 +28,10 @@ const rotas = createBrowserRouter([
       {
         path:"/equipe/:id2",
         element:<TempleteEquipe/>
+      },
+      {
+        path:"/tecnologia/:id3",
+        element:<TempleteTecnologia/>
       }
     ]
   }
