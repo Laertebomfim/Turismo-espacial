@@ -17,9 +17,9 @@ const listyle = tv({
 //==========================================
 
 
-export default function Navega({MudaIformações,arrayTecnologia,nomeurl}){
+export default function Navega({MudaIformações,arrayDeObjeto,nomeurl}){
 
-    const [arrayDeInformação,setArrayDeInformação] =useState(arrayTecnologia)
+    const [arrayDeInformação,setArrayDeInformação] =useState(arrayDeObjeto)
 
     let navega = useNavigate()// adsiona o nome a barra de pesquisa
 
@@ -51,6 +51,6 @@ export default function Navega({MudaIformações,arrayTecnologia,nomeurl}){
 }
 Navega.propTypes = {
     MudaIformações:PropTypes.func,
-    arrayTecnologia:PropTypes.array,
+    arrayDeObjeto:PropTypes.array,
     nomeurl:PropTypes.string
 }

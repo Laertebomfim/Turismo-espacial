@@ -1,41 +1,4 @@
-// icons
-import IconFecha from "../src/recucos/Icons/IconClose.svg"
-import IconHamburger from "../src/recucos/Icons/IconHamburger.svg"
-import Logo from "../src/recucos/Icons/Logo.svg"
-// imagem de fundo Home 
-import HomeDesktop from "../src/recucos/capa/home/HomeDesktop.jpg"
-import HomeTablet from"../src/recucos/capa/home/HomeTablet.jpg"
-import HomeMobile from "../src/recucos/capa/home/HomeMobile.jpg"
 
-// imagem de fumdo Destino
-import DestinoDesktop from "../src/recucos/destino/background-destination-desktop.jpg"
-import DestinoTablet from "../src/recucos/destino/background-destination-tablet.jpg"
-import DestinoMobile from "../src/recucos/destino/background-destination-mobile.jpg"
-// imagem de fumdo Equipe
-import EquipeDesktop from "../src/recucos/Equipe/background-crew-desktop.jpg"
-import EquipeTablet from "../src/recucos/Equipe/background-crew-tablet.jpg"
-import EquipeMobile from "../src/recucos/Equipe/background-crew-mobile.jpg"
-// imagem de fumgo Tecnologia
-import TecnologiaDesktop from "../src/recucos/tecnologia/background-technology-desktop.jpg"
-import TecnologiaTablet from "../src/recucos/tecnologia/background-technology-tablet.jpg"
-import TecnologiaMobile from "../src/recucos/tecnologia/background-technology-mobile.jpg"
-// imagem Plenatas
-import ImgMoon from"../src/recucos/destino/image-moon.png"
-import ImgMars from"../src/recucos/destino/image-mars.png"
-import ImgEuropa from "../src/recucos/destino/image-europa.png"
-import ImgTitan from "../src/recucos/destino/image-titan.png"
-// imagem Equipe
-import ImgAnsari from "../src/recucos/Equipe/ansari.png"
-import ImgGlover from "../src/recucos/Equipe/glover.webp"
-import ImgHurley from "../src/recucos/Equipe/hurley.png"
-import ImgShuttleworth from "../src/recucos/Equipe/shuttleworth.webp"
-// img tecnologia
-import ImgCapsulePequena from "../src/recucos/tecnologia/capsule-landscape.jpg"
-import ImgCapsuleGrande from "../src/recucos/tecnologia/capsule-landscape.jpg"
-import ImgSpaceportPequena from "../src/recucos/tecnologia/spaceport-landscape.jpg"
-import ImgSpaceportGrande from "../src/recucos/tecnologia/spaceport-portrait.jpg"
-import ImgVehiclePequena from "../src/recucos/tecnologia/vehicle-landscape.jpg"
-import ImgVehicleGrande from "../src/recucos/tecnologia/vehicle-portrait.jpg"
 const DestinoPranetas ={
     moon:{
         img:"../public/recursos/destino/image-moon.png",
@@ -66,6 +29,7 @@ const DestinoPranetas ={
         Tempo:"7 anos",
     }
 }
+
 const InfomacoesEquipe ={
     shuttleworth:{
         img:"../public/recursos/Equipe/shuttleworth.webp",
@@ -92,6 +56,7 @@ const InfomacoesEquipe ={
         texto:"Anousheh Ansari é uma engenheira iraniana-americana e cofundadora da Prodea Systems. Ansari foi a quarta turista espacial autofinanciada, a primeira mulher autofinanciada a voar para a ISS e a primeira iraniana no espaço."
     }
 }
+
 const TecnologiaInfor={
     capsule:{
         imgG:"../public/recursos/tecnologia/capsule-portrait.jpg",
@@ -113,22 +78,9 @@ const TecnologiaInfor={
     },
 }
 export{
-    IconFecha,
-    IconHamburger,
-    Logo,
-    HomeDesktop,
-    HomeTablet,
-    HomeMobile,
-    DestinoDesktop,
-    DestinoTablet,
-    DestinoMobile,
     DestinoPranetas,
-    EquipeDesktop,
-    EquipeTablet,
-    EquipeMobile,
+
     InfomacoesEquipe,
-    TecnologiaDesktop,
-    TecnologiaTablet,
-    TecnologiaMobile,
+
     TecnologiaInfor,
 }

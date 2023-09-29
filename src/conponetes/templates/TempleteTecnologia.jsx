@@ -29,9 +29,9 @@ export default function TempleteTecnologia(){
                         <img className="w-full max-h-[300px] xl:h-full xl:max-h-[450px] xl:max-w-[500px]" src={(valorResize > 1280 ? infomaçoesPagina.imgG :infomaçoesPagina.imgP )}></img>
                     </div>
                 </article>
-                <article className="px-4 max-w-[600px] mx-auto md:pb-10 xl:pb-0 xl:mb-0">
+                <article className="px-4 max-w-[600px] mx-auto md:pb-10 xl:pb-0 xl:mb-0 xl:ml-32">
                     <div className="w-5/6 max-w-[370px] mx-auto xl:xl:ml-0">
-                        <Navega arrayTecnologia={arrayTecnologia} MudaIformações={MudaIformações} nomeurl="tecnologia"/>
+                        <Navega arrayDeObjeto={arrayTecnologia} MudaIformações={MudaIformações} nomeurl="tecnologia"/>
                     </div>
                     <h2 className="md:text-xl pb-4">{"A TERMINOLOGIA..."}</h2>
                     <h1 className="text-2xl font-Bellefair font-bold text-slate-400 pb-4 md:text-3xl xl:text-4xl">{infomaçoesPagina.nome}</h1>
